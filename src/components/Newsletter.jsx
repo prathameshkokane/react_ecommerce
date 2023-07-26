@@ -1,4 +1,4 @@
-import { Send } from "@material-ui/icons";
+import { MdSend } from "react-icons/md";
 import styled from "styled-components";
 import { mobile } from "../responsive";
 
@@ -54,7 +54,7 @@ const Newsletter = () => {
       <InputContainer>
         <Input placeholder="Your email" />
         <Button>
-          <Send />
+          <MdSend />
         </Button>
       </InputContainer>
     </Container>

@@ -1,4 +1,4 @@
-import { Add, Remove } from "@material-ui/icons";
+import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 import styled from "styled-components";
 import Announcement from "../components/Announcement";
 import Footer from "../components/Footer";
@@ -114,9 +114,9 @@ const Product = () => {
 
           <AddContainer>
             <AmountContainer>
-              <Remove onClick={() => handleQuantity("dec")} />
+              <AiOutlineMinus onClick={() => handleQuantity("dec")} />
               <Amount>{quantity}</Amount>
-              <Add onClick={() => handleQuantity("inc")} />
+              <AiOutlinePlus onClick={() => handleQuantity("inc")} />
             </AmountContainer>
             <Button>ADD TO CART</Button>
           </AddContainer>

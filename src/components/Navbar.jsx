@@ -1,5 +1,4 @@
-import { Badge } from "@material-ui/core";
-import { ShoppingCartOutlined } from "@material-ui/icons";
+import { PiShoppingCartBold } from "react-icons/pi";
 import React from "react";
 import styled from "styled-components";
 import { mobile } from "../responsive";
@@ -44,6 +43,19 @@ const MenuItem = styled.div`
   ${mobile({ fontSize: "12px", marginLeft: "10px" })}
 `;
 
+const Badge = styled.p`
+  position: absolute;
+  border-radius: 50%;
+  background-color: #ff243a;
+  color: white;
+  width: 15px;
+  height: 15px;
+  font: 800 0.6rem "Urbanist";
+  display: grid;
+  place-items: center;
+  transform: translate(90%, -200%);
+`;
+
 const Navbar = () => {
   return (
     <Container>
@@ -66,9 +78,10 @@ const Navbar = () => {
           </Link>
           <Link to="/cart">
             <MenuItem>
-              <Badge badgeContent={1} color="primary">
-                <ShoppingCartOutlined style={{ color: "white" }} />
-              </Badge>
+              <PiShoppingCartBold
+                style={{ color: "white", fontSize: "1.3rem" }}
+              />
+              <Badge>1</Badge>
             </MenuItem>
           </Link>
         </Right>

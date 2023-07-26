@@ -1,4 +1,4 @@
-import { Add, Remove } from "@material-ui/icons";
+import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 import styled from "styled-components";
 import Announcement from "../components/Announcement";
 import Footer from "../components/Footer";
@@ -34,7 +34,7 @@ const TopButton = styled.button`
   cursor: pointer;
   border: ${(props) => props.type === "filled" && "none"};
   background-color: ${(props) =>
-    props.type === "filled" ? "black" : "transparent"};
+    props.type === "filled" ? "#573b8a" : "transparent"};
   color: ${(props) => props.type === "filled" && "white"};
 `;
 
@@ -133,7 +133,8 @@ const SummaryItemPrice = styled.span``;
 const Button = styled.button`
   width: 100%;
   padding: 10px;
-  background-color: black;
+  background-color: #573b8a;
+  border: none;
   color: white;
   font-weight: 600;
 `;
@@ -141,8 +142,8 @@ const Button = styled.button`
 const Cart = () => {
   return (
     <Container>
-      <Navbar />
       <Announcement />
+      <Navbar />
       <Wrapper>
         <Title>YOUR BAG</Title>
         <Top>
@@ -176,9 +177,9 @@ const Cart = () => {
               </ProductDetail>
               <PriceDetail>
                 <ProductAmountContainer>
-                  <Add />
+                  <AiOutlinePlus />
                   <ProductAmount>2</ProductAmount>
-                  <Remove />
+                  <AiOutlineMinus />
                 </ProductAmountContainer>
                 <ProductPrice>₹ 1000</ProductPrice>
               </PriceDetail>

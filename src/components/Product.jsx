@@ -1,8 +1,8 @@
 import {
-  FavoriteBorderOutlined,
-  SearchOutlined,
-  ShoppingCartOutlined,
-} from "@material-ui/icons";
+  PiShoppingCartBold,
+  PiMagnifyingGlass,
+  PiHeartStraightBold,
+} from "react-icons/pi";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
@@ -76,7 +76,7 @@ const Product = ({ item }) => {
       <Info>
         <Icon>
           <Link to={`/cart`} style={{ color: "white", textDecoration: "none" }}>
-            <ShoppingCartOutlined />
+            <PiShoppingCartBold />
           </Link>
         </Icon>
         <Icon>
@@ -84,11 +84,11 @@ const Product = ({ item }) => {
             to={`/product/${item._id} `}
             style={{ color: "white", textDecoration: "none" }}
           >
-            <SearchOutlined />
+            <PiMagnifyingGlass />
           </Link>
         </Icon>
         <Icon>
-          <FavoriteBorderOutlined />
+          <PiHeartStraightBold />
         </Icon>
       </Info>
     </Container>

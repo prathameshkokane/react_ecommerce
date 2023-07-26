@@ -1,11 +1,10 @@
 import {
-  GitHub,
-  LinkedIn,
-  Mail,
-  MailOutline,
-  Phone,
-  Room,
-} from "@material-ui/icons";
+  AiFillGithub,
+  AiFillHome,
+  AiFillLinkedin,
+  AiFillMail,
+  AiFillPhone,
+} from "react-icons/ai";
 import styled from "styled-components";
 import { mobile } from "../responsive";
 import { Link } from "react-router-dom";
@@ -95,7 +94,7 @@ const Footer = () => {
             rel="noreferrer"
           >
             <SocialIcon color="E4405F">
-              <Mail />
+              <AiFillMail />
             </SocialIcon>
           </a>
           <a
@@ -104,7 +103,7 @@ const Footer = () => {
             rel="noreferrer"
           >
             <SocialIcon color="3B5999">
-              <LinkedIn />
+              <AiFillLinkedin />
             </SocialIcon>
           </a>
           <a
@@ -113,7 +112,7 @@ const Footer = () => {
             rel="noreferrer"
           >
             <SocialIcon color="000000">
-              <GitHub />
+              <AiFillGithub />
             </SocialIcon>
           </a>
         </SocialContainer>
@@ -122,13 +121,13 @@ const Footer = () => {
       <Right>
         <Title>Contact</Title>
         <ContactItem>
-          <Room style={{ marginRight: "10px" }} /> Mumbai, Maharashtra
+          <AiFillHome style={{ marginRight: "10px" }} /> Mumbai, Maharashtra
         </ContactItem>
         <ContactItem>
-          <Phone style={{ marginRight: "10px" }} /> +91 98765 43210
+          <AiFillPhone style={{ marginRight: "10px" }} /> +91 98765 43210
         </ContactItem>
         <ContactItem>
-          <MailOutline style={{ marginRight: "10px" }} /> prathamesh@gmail.com
+          <AiFillMail style={{ marginRight: "10px" }} /> prathamesh@gmail.com
         </ContactItem>
       </Right>
     </Container>

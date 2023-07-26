@@ -5,8 +5,8 @@ import Navbar from "../components/Navbar";
 import { mobile } from "../responsive";
 
 const Container = styled.div`
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background: linear-gradient(
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
@@ -22,7 +22,7 @@ const MainContainer = styled.div`
   justify-content: center;
 `;
 const Wrapper = styled.div`
-  width: 25%;
+  width: 30%;
   padding: 20px;
   background-color: white;
   ${mobile({ width: "75%" })}
